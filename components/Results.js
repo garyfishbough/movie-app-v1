@@ -1,9 +1,10 @@
 /* eslint-disable react/jsx-key */
+import Card from './Card';
 const Results = ({ results }) => {
     return (
         <div>
             {results.map((result) => (
-                <h1>{result.title}</h1>
+                <Card key={result.id} result={result} />
             ))}
         </div>
     );
