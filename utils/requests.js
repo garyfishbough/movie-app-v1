@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 const API_KEY = process.env.API_KEY;
 
+// fetches the data from the TMDb database using API key
 export default {
     fetchTrending: {
         title: 'Trending',
